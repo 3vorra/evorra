@@ -6,7 +6,7 @@
 
 body {
   font-family: Inter, sans-serif;
-  line-height: 1.4;
+  line-height: 1;
   color: #000;
 }
 
@@ -20,12 +20,12 @@ body {
 }
 
 .banner-track {
-	display: inline-flex; gap: 2rem;
-	animation: scroll 20s linear infinite;
+	display: inline-flex; gap: 1rem;
+	animation: scroll 10s linear infinite;
 }
 
 .banner-text {
-	font-size: 2rem; font-weight: bold;
+	font-size: 1rem; font-weight: bold;
 	color: #fff;
 	text-transform: uppercase;
 	display: flex;
