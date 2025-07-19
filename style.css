@@ -1,8 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
-  max-width: 600px;
-  margin: 4rem auto;
-  padding: 2rem;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: Inter, sans-serif;
+  line-height: 1.4;
+  color: #000;
+}
+
+/* SCROLLING BANNER */
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  overflow: hidden;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+.banner-track {
+  display: flex;
+  animation: scroll 15s linear infinite;
+  white-space: nowrap;
+}
+
+.banner-text {
+  padding: 0 2rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* nav */
+.main-nav {
+  margin-top: 60px; /* to clear the fixed banner */
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.main-nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.main-nav a:hover {
+  color: #0fce83;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  height: calc(100vh - 100px);
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: -0.05em;
+}
+
+/* KEYFRAME */
+@keyframes scroll {
+  from { transform: translateX(0%); }
+  to   { transform: translateX(-50%); }
 }
