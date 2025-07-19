@@ -19,22 +19,31 @@
       overflow: hidden;
       background-color: #000;
       color: #fff;
+	overflow: hidden;
       z-index: 1000;
+	display: flex;
+	align-items: center;
     }
+
+    .banner-track {
+	display:flex;
+	width: max-content;
+	animation: scroll-right 15s linear infinite;
 
     .banner-text {
       display: inline-block;
       white-space: nowrap;
-      padding-left: 100%;
-      animation: scroll-left 15s linear infinite;
+      padding-left: 0 2rem;
+	color: #fff
+	font-size: 1rem;
     }
 
-    @keyframes scroll-left {
+    @keyframes scroll-right {
       0% {
-        transform: translateX(0%);
+        transform: translateX(-100%);
       }
       100% {
-        transform: translateX(-100%);
+        transform: translateX(100%);
       }
     }
   </style>
@@ -42,15 +51,18 @@
 <body>
 
   <div class="banner-container">
-    <div class="banner-text">
-      EVORRA
+    <div class="banner-track">
+      <div class="banner-text">
+        EVORRA
+      </div>
+      <div class="banner-text">
+        EVORRA
+      </div>
     </div>
   </div>
 
   <div style="padding-top: 50px;">
-
-	<p> 
-	</p>
+    <p>Your website content starts here.</p>
   </div>
 
 </body>
