@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>evorra</title>
-  <link rel="stylesheet" href="style.css" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Evorra</title>
+	<link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .banner-container {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 40px;
+      overflow: hidden;
+      background-color: #000;
+      color: #fff;
+      z-index: 1000;
+    }
+
+    .banner-text {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: scroll-left 15s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1> </h1>
-  <p>yessuuuurrrrr evorra evorra evorra evorra evorra evorra</p>
+
+  <div class="banner-container">
+    <div class="banner-text">
+      EVORRA
+    </div>
+  </div>
+
+  <div style="padding-top: 50px;">
+
+	<p> 
+	</p>
+  </div>
+
 </body>
 </html>
