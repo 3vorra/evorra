@@ -28,7 +28,7 @@ html, body {
 .banner-track {
   display: flex;
   white-space: nowrap;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-right 7s linear infinite;
 }
 
 .banner-text {
@@ -39,19 +39,18 @@ html, body {
   padding: 0 1rem;
 }
 
-@keyframes scroll-left {
+@keyframes scroll-right {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(50%);
   }
 }
 
 /* Layout Structure */
 .container {
   display: flex;
-  margin-top: 40px; /* Adjust for banner height */
   height: 100vh;
 }
 
