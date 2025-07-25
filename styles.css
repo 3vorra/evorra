@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+main {
+  margin-top: 50px; /* match banner height */
+}
+
 body {
   font-family: Inter, sans-serif;
   line-height: 1;
@@ -83,7 +87,7 @@ body {
 
 .full-width-img {
   display: block;
-  width: 100wv;
+  width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
