@@ -12,16 +12,24 @@ body {
 
 .banner {
 	position: relative;
-	width: 100wv;
+	top: 0;
+	left: 0;
+	width: 100%;
 	overflow: hidden;
 	white-space: nowrap;
 	background: #000;
 	padding: 1rem 0;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	z-index: 999;
 }
 
 .banner-track {
-	display: inline-flex; gap: 1rem;
+	display: inline-flex; 
+	gap: 1rem;
 	animation: scroll 10s linear infinite;
+	white-space: nowrap;
 }
 
 .banner-text {
@@ -31,6 +39,37 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+}
+
+/* nav */
+.main-nav {
+  margin-top: 60px; /* to clear the fixed banner */
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.main-nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.main-nav a:hover {
+  color: #0fce83;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  height: calc(100vh - 100px);
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: -0.05em;
 }
 
 @keyframes scroll {
